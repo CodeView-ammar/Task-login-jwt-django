@@ -10,7 +10,7 @@ EMAIL_HOST_USER =  settings.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = settings.EMAIL_HOST_PASSWORD
 EMAIL_PORT = settings.EMAIL_PORT
 
-HTMLFile = codecs.open("user/mail_template.html", 'r', "utf-8").read()
+HTMLFile = codecs.open("template/mail_template.html", 'r', "utf-8").read()
 def send_verify_email(user, link):
     content = f"Hi there, {user.first_name} {user.last_name} We received a request to create a new account with your email address. To confirm that this is you, please enter the following verification code when prompted"
     title = 'Email Verification'
